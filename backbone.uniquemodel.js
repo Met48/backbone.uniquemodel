@@ -264,7 +264,7 @@
       '(.+)'                         // key
     ].join('\\' + UniqueModel.STORAGE_KEY_DELIMETER));
 
-    var match = key.match(re);
+    var match = key && key.match(re);
     if (!match)
       return;
 
